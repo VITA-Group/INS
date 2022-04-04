@@ -1,0 +1,12 @@
+CUDA_VISIBLE_DEVICES=1  python run_nerf.py \
+    --batch_size 1 \
+    --config configs/lego.txt \
+    --data_path datasets/nerf_synthetic/lego \
+    --expname  lego_linear_eval \
+    --ckpt_path ckpts/style_interpolation.ckpt \
+    --mixed_styles datasets/mixed_styles_3samples/ \
+    --embed_mlp \
+    --embed_posembed \
+    --eval \
+    --linear_eval \
+    --zero_viewdir
