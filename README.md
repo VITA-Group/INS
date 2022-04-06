@@ -6,7 +6,7 @@
 <img src="https://raw.githubusercontent.com/zhiwenfan/INS/main/INS/ours_lego_the_scream.gif" height="150"/>
 <img src="https://raw.githubusercontent.com/zhiwenfan/INS/main/INS/ours_mic_starrynight.gif" height="150"/>
 <img src="https://raw.githubusercontent.com/zhiwenfan/INS/main/INS/ours_room.gif" height="150"/>
-<img src="https://raw.githubusercontent.com/zhiwenfan/INS/main/INS/ours_horns_gris" height="150"/>
+<img src="https://raw.githubusercontent.com/zhiwenfan/INS/main/INS/ours_horns_gris.gif" height="150"/>
 </div>
 
 ## Installation
