@@ -50,8 +50,7 @@ After generating datasets, users can test the conditional style interpolation of
 ```
 bash scripts/linear_eval.sh
 ```
-
-Users can also generate new views using given camera coordinates:
+And infer on single scene and single style:
 ```
 bash scripts/infer_horns.sh
 ```
