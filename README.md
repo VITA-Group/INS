@@ -58,7 +58,10 @@ After generating datasets, users can test the conditional style interpolation of
 ```
 bash scripts/linear_eval.sh
 ```
-And infer on single scene and single style:
+Inference on scene-horns with style-gris1:
 ```
 bash scripts/infer_horns.sh
 ```
+## TODO
+
+More testing checkpoints and training scripts will be added.
