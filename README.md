@@ -65,3 +65,18 @@ bash scripts/infer_horns.sh
 ## TODO
 
 More testing checkpoints and training scripts will be added.
+
+## Citation
+
+If you find this repo is helpful, please cite:
+
+```
+
+@article{fan2022unified,
+  title={Unified Implicit Neural Stylization},
+  author={Fan, Zhiwen and Jiang, Yifan and Wang, Peihao and Gong, Xinyu and Xu, Dejia and Wang, Zhangyang},
+  journal={arXiv preprint arXiv:2204.01943},
+  year={2022}
+}
+
+```
