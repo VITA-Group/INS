@@ -53,6 +53,8 @@ python gen_dataset.py --config <config_file>
 ```
 where `<config_file>` is the path to the configuration file of your experiment instance. Examples and pre-defined configuration files are provided in `configs` folder.
 
+### Download Prepared Data:
+We provide a data sample for scene "room" in the [Google_Drive](https://drive.google.com/file/d/1W0jtIAu0el04awnSNp712gHZTQJ9nGiU/view?usp=sharing), you can direct download it without any modification.
 ## Testing
 
 After generating datasets, users can test the conditional style interpolation of INS+NeRF by the following command:
@@ -63,9 +65,11 @@ Inference on scene-horns with style-gris1:
 ```
 bash scripts/infer_horns.sh
 ```
-## TODO
-
-More testing checkpoints and training scripts will be added.
+## Training
+One can do training using:
+```
+bash scripts/train_room_thescream_28G_mem.sh
+```
 
 ## Citation
 
