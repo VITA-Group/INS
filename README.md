@@ -55,6 +55,8 @@ where `<config_file>` is the path to the configuration file of your experiment i
 
 ### Download Prepared Data:
 We provide a data sample for scene "room" in the [Google_Drive](https://drive.google.com/file/d/1W0jtIAu0el04awnSNp712gHZTQJ9nGiU/view?usp=sharing), you can direct download it without any modification.
+
+
 ## Testing
 
 After generating datasets, users can test the conditional style interpolation of INS+NeRF by the following command:
@@ -65,23 +67,40 @@ Inference on scene-horns with style-gris1:
 ```
 bash scripts/infer_horns.sh
 ```
+
 ## Training
+
 One can do training using:
 ```
 bash scripts/train_room_thescream_28G_mem.sh
 ```
+
+## Stylizing Textured SDF
+
+We also provide code and scripts to stylize textured signed distance functions based on [Implicit Differentiable Renderer (IDR)](https://arxiv.org/abs/2003.09852).
+
+To prepare data, run scripts `data/download_data.sh`, which will download the DTU dataset into the `datasets/` directory.
+
+Afterwards, train an IDR for a scanned data in DTU where the available IDs are listed in `datasets/DTU`:
+```
+python run_idr.py --conf ./configs/idr_fixed_cameras.conf --scan_id <SCAN_ID>
+```
+
+Finally, one can stylize an IDR model with a style image specified in the configuration file:
+```
+python run_idr.py --conf <CONF_FILE> --scan_id <SCAN_ID> --is_continue
+```
+in which we defined two preset configurations `configs/idr_stylize_face.conf` and `configs/idr_stylize_scream.conf`.
 
 ## Citation
 
 If you find this repo is helpful, please cite:
 
 ```
-
-@article{fan2022unified,
+@inproceedings{fan2022unified,
   title={Unified Implicit Neural Stylization},
   author={Fan, Zhiwen and Jiang, Yifan and Wang, Peihao and Gong, Xinyu and Xu, Dejia and Wang, Zhangyang},
-  journal={arXiv preprint arXiv:2204.01943},
+  booktitle={European Conference on Computer Vision},
   year={2022}
 }
-
 ```
