@@ -79,7 +79,7 @@ bash scripts/train_room_thescream_28G_mem.sh
 
 We also provide code and scripts to stylize textured signed distance functions based on [Implicit Differentiable Renderer (IDR)](https://arxiv.org/abs/2003.09852).
 
-To prepare data, run scripts `data/download_data.sh`, which will download the DTU dataset into the `datasets/` directory.
+To prepare data, run scripts `data/download_data.sh`, which will download the DTU dataset into the `datasets/` directory. Then follow the [instructions in IDR official repository](https://github.com/lioryariv/idr#installation-requirmenets) to set up the running environment.
 
 Afterwards, train an IDR for a scanned data in DTU where the available IDs are listed in `datasets/DTU`:
 ```
